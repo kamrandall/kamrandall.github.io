@@ -73,6 +73,7 @@ main ul li{
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    transition: width 300ms ease, height 300ms ease;
 }
 
 #butter:hover {
@@ -86,6 +87,7 @@ main ul li{
     height: 70px;
     width: 70px;
     border-radius: 50%;
+    transition: width 300ms ease, height 300ms ease;
 }
 
 #pb:hover {
