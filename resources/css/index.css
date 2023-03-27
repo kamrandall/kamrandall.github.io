@@ -1,0 +1,95 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+/* 2. Typography
+======================================== */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+a:hover {
+    color: hsl(0, 0%, 40%);
+}
+
+a:active {
+    color: hsl(245, 39%, 33%);
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.banner_container {
+    background-image: url(../images/Roller-skating_Morgan-Chapman-Media.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 720px;
+
+}
+
+.banner_text {
+    padding: 80px;
+    color: white;
+    width: 50%;
+    height: auto;
+    text-shadow: 1px 1px 1px grey;
+}
+
+
+.about_me {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.about_me_text {
+    margin: 20px 150px;
+}
