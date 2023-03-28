@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html {
     height: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
     width: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -18,12 +18,11 @@ html {
     width: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    display: grit;
+    justify-content: center;
   }
 
-
-/* 2. Typography
-======================================== */
-
-* {
-    font-family: 'Montserrat', sans-serif;
-}
+  .arrow {
+    width: 20%;
+    height: auto;
+  }
