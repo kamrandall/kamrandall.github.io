@@ -1,4 +1,8 @@
 /* universals */
+* {
+    box-sizing: border-box;
+}
+
 
 html {
     font-family: 'Prompt', sans-serif;
@@ -23,7 +27,7 @@ body {
 
 nav ul li {
     display: inline-block;
-    padding: 0 90px;
+    padding: 0 80px;
 }
 
 nav ul li a {
@@ -92,7 +96,7 @@ nav ul li a:hover {
 }
 
 .products-content {
-    display: inline-flex;
+    display: flex;
     flex-flow: wrap;
     justify-content: space-around;
     row-gap: 80px;
@@ -113,7 +117,7 @@ nav ul li a:hover {
     text-align: center;
     font-weight: 100;
     text-transform: uppercase;
-    width: 50px;
+    width: 150px;
     padding-left: 15px;
     align-self: center;
 }
