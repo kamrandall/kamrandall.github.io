@@ -136,7 +136,7 @@ nav ul li a:hover {
 }
 
 .team-members {
-    display: inline-flex;
+    display: flex;
     flex-flow: wrap;
     justify-content: center;
     gap: 30px;
