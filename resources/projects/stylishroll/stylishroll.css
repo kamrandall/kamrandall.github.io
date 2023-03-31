@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 .banner {
     margin-top: 0;
-    background-image: url('./resources/images/banner.png');
+    background-image: url('./images/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
