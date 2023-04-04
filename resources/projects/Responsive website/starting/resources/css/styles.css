@@ -37,7 +37,7 @@ p {
     padding: 0 1.25rem 1.25rem 1.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 950px) {
     h2, p {
         text-align: center;
         padding: 0;
@@ -71,7 +71,7 @@ nav ul li a:hover {
     color: hsl(0, 51%, 55%);
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 950px) {
     nav ul li {
         display: block;
         padding: 0.625rem;
@@ -114,7 +114,7 @@ nav ul li a:hover {
    text-align: center;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1350px) {
     .about-us-pics {
         display: grid;
         grid-template-columns: 1fr;
@@ -156,7 +156,7 @@ nav ul li a:hover {
     opacity: 0.75;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 850px) {
     .books-pics {
         display: grid;
         grid-template-columns: 1fr;
@@ -198,7 +198,7 @@ nav ul li a:hover {
     opacity: 0.75;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 950px) {
     .other-imgs {
         display: grid;
         grid-template-columns: 1fr;
