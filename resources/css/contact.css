@@ -9,25 +9,25 @@ html {
     width: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-  }
+}
 
-  body {
+body {
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
     width: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    display: grit;
-    justify-content: center;
-  }
+    display: grid;
+    text-align: center;
+}
 
-  .arrow {
-    width: 20%;
-    height: auto;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-  a:hover {
+a:hover {
     color: hsl(0, 0%, 40%);
 }
 
@@ -38,4 +38,18 @@ a:active {
 .navigation ul li {
     display: inline-block;
     padding: 0 20px;
+}
+
+img {
+  margin: 0 30px;
+  width: 100px;
+  height: auto;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+arrow:hover {
+  color: darkgrey;
 }
