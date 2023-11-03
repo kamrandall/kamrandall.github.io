@@ -16,10 +16,45 @@
         <!-- CSS -->
         <link href="./projects.css" rel="stylesheet">
     </head>
+
     <body>
         <ul>
-            <li><a href="./stylishroll/stylishroll.html">Flexbox website</a></li>
-            <li><a href="./Responsive website/starting/index.html">Responsive website</a></li>
+            <li>
+                <button type="button" class="name">Flexbox website</button>
+                <br>
+                <a href="./stylishroll/stylishroll.html">
+                    
+                    <img class="image" src="../images/Screenshot 2023-06-10 at 20.45.49.png">
+                </a>
+                </li>
+            <li>
+                <button type ="button" class="name">Responsive website</button>
+                <br>
+                <a href="./Responsive website/starting/index.html">
+                    <img class="image" src="../images/Screenshot 2023-06-10 at 20.46.12.png">
+                </a>
+            </li>
         </ul>
+
+        <div class="back">
+            <a href="../../index.html">
+                <h2>Back to main</h2>
+                <img class="arrow" src="../images/pngwing.com.png">
+            </a>
+        </div>
+
+    <script>
+        const projectNames = document.getElementsByClassName("name");
+        const projectImages = document.getElementsByClassName("image");
+
+        function openImages() {
+            projectImages.style.display = "block";
+        }
+
+        for(let i = 0; i < projectImages.length; i++) {   
+        projectNames[i].addEventListener("click", openImages);
+        }
+
+    </script>
 
     </body>
