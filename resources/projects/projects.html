@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Title -->
-        <title>Projects</title>
+	<head>
+		<!-- Title -->
+		<title>Projects</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100&display=swap" rel="stylesheet">
-        
-        <!-- meta -->
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-        
-        <!-- CSS -->
-        <link href="./projects.css" rel="stylesheet">
-    </head>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;1,100&display=swap"
+			rel="stylesheet"
+		/>
 
-    <body>
-        <ul>
-            <li>
-                <button type="button" class="name">Flexbox website</button>
-                <br>
-                <a href="./stylishroll/stylishroll.html">
-                    
-                    <img class="image" src="../images/Screenshot 2023-06-10 at 20.45.49.png">
-                </a>
-                </li>
-            <li>
-                <button type ="button" class="name">Responsive website</button>
-                <br>
-                <a href="./Responsive website/starting/index.html">
-                    <img class="image" src="../images/Screenshot 2023-06-10 at 20.46.12.png">
-                </a>
-            </li>
-        </ul>
+		<!-- meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <div class="back">
-            <a href="../../index.html">
-                <h2>Back to main</h2>
-                <img class="arrow" src="../images/pngwing.com.png">
-            </a>
-        </div>
+		<!-- CSS -->
+		<link href="./projects.css" rel="stylesheet" />
+	</head>
 
-    <script>
-        const projectNames = document.getElementsByClassName("name");
-        const projectImages = document.getElementsByClassName("image");
+	<body>
+		<a href="../../index.html">
+			<nav class="back">
+				<p>Back to main</p>
+				<img class="arrow" src="../images/pngwing.com.png" />
+			</nav>
+		</a>
+		<div class="page-container">
+			<ul>
+				<li class="project-container">
+					<!-- <a href="./stylishroll/stylishroll.html" class="project-link"> -->
+					<button type="button" class="name">Flexbox website</button>
+					<img class="projects-image" src="../images/Screenshot 2023-06-10 at 20.45.49.png" />
+					<!-- </a> -->
+				</li>
+				<li class="project-container">
+					<!-- <a href="./Responsive website/starting/index.html" class="project-link"> -->
+					<button type="button" class="name">Responsive website</button>
+					<img class="projects-image" src="../images/Screenshot 2023-06-10 at 20.46.12.png" />
+					<!-- </a> -->
+				</li>
+			</ul>
+		</div>
 
-        function openImages() {
-            projectImages.style.display = "block";
-        }
+		<script>
+			const projectNames = document.getElementsByClassName("name");
+			const images = document.getElementsByClassName("projects-image");
 
-        for(let i = 0; i < projectImages.length; i++) {   
-        projectNames[i].addEventListener("click", openImages);
-        }
+			for (let i = 0; i < projectNames.length; i++) {
+				const toggleImage = () => {
+					const currImage = images[i];
+					if (currImage.style.width === "50%") {
+						currImage.style.width = "0%";
+						// currImage.style.display = "none";
 
-    </script>
-
-    </body>
+						return;
+					}
+					// currImage.style.display = "block";
+					currImage.style.width = "50%";
+				};
+				projectNames[i].addEventListener("click", toggleImage);
+			}
+		</script>
+	</body>
+</html>

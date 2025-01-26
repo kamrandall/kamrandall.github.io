@@ -3,6 +3,25 @@
     text-align: center;
 }
 
+html {
+    height: 85%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(197, 230, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -14,28 +33,57 @@ li {
     margin: 1em;
 }
 
-.image {
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.name {
+    border: 1px solid rgb(197, 230, 247);
+    border-radius: 8px;
+    width: 20%;
+    min-width: 130px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.name:hover {
+    background-color: rgb(51, 112, 150);
+    color: #fff;
+    cursor: pointer;
+}
+
+.projects-image {
+    display: block;
     margin-top: 2em;
     height: auto;
-    display: none;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 0%;
+    transition: width 0.5s ease-out;
+}
+
+nav {
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(194, 164, 138);
+}
+
+nav:hover {
+    background-color:  rgb(190, 170, 153);
+    cursor: pointer;
 }
 
 .back {
-    position: absolute;
-    bottom: 10px;
-    left: 46%;
+    font-size: 20px;
 }
 
 .back img {
-    margin: 0 30px;
-    width: 50px;
+    width: 30px;
     height: auto;
   }
   
-  h2 {
-    margin-bottom: 0;
-  }
   
